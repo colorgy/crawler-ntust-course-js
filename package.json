@@ -13,6 +13,7 @@
     "check": "npm run lint -s && dependency-check package.json --entry src",
     "watch": "watch 'npm run build' src test",
     "test": "babel-node test/*.js | tspec",
+    "console": "babel-node bin/console",
     "prebuild": "npm run check -s && npm run clean -s",
     "build": "babel --optional runtime src -d dist",
     "postbuild": "npm run test -s",

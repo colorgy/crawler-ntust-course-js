@@ -1,0 +1,9 @@
+#!/usr/bin/env babel-node
+
+var repl = require('repl');
+
+var replServer = repl.start({
+  prompt: '> '
+});
+
+replServer.context.crawlerNTUSTCourse = require('../src/index.js');
