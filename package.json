@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com//crawler-NTUST-course.git"
+    "url": "git+https://github.com/colorgy/crawler-ntust-course-js.git"
   },
   "keywords": [
     "node"
@@ -34,9 +34,9 @@
   "author": "Neson <neson@dex.tw>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com//crawler-NTUST-course/issues"
+    "url": "https://github.com/colorgy/crawler-ntust-course-js/issues"
   },
-  "homepage": "https://github.com//crawler-NTUST-course#readme",
+  "homepage": "https://github.com/colorgy/crawler-ntust-course-js#readme",
   "devDependencies": {
     "babel": "*",
     "babel-eslint": "*",
