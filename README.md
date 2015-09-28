@@ -47,10 +47,10 @@ MIT © [Neson](http://github.com/colorgy)
 [npm-url]: https://npmjs.org/package/crawler-ntust-course
 [npm-image]: https://img.shields.io/npm/v/crawler-ntust-course.svg?style=flat-square
 
-[travis-url]: https://travis-ci.org//crawler-ntust-course
-[travis-image]: https://img.shields.io/travis//crawler-ntust-course.svg?style=flat-square
+[travis-url]: https://travis-ci.org/colorgy/crawler-ntust-course-js
+[travis-image]: https://img.shields.io/travis/colorgy/crawler-ntust-course-js.svg?style=flat-square
 
-[depstat-url]: https://david-dm.org//crawler-ntust-course
-[depstat-image]: https://david-dm.org//crawler-ntust-course.svg?style=flat-square
+[depstat-url]: https://david-dm.org/colorgy/crawler-ntust-course-js
+[depstat-image]: https://david-dm.org/colorgy/crawler-ntust-course-js.svg?style=flat-square
 
 [download-badge]: http://img.shields.io/npm/dm/crawler-ntust-course.svg?style=flat-square
