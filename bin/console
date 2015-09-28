@@ -6,4 +6,4 @@ var replServer = repl.start({
   prompt: '> '
 });
 
-replServer.context.crawlerNTUSTCourse = require('../src/index.js');
+replServer.context.Crawler = require('../src/index.js');

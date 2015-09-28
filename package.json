@@ -1,5 +1,5 @@
 {
-  "name": "crawler-NTUST-course",
+  "name": "crawler-ntust-course",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -12,21 +12,17 @@
     "lint": "eslint src test",
     "check": "npm run lint -s && dependency-check package.json --entry src",
     "watch": "watch 'npm run build' src test",
-    "test": "babel-node test/*.js | tspec",
+    "test": "mocha --compilers js:babel/register",
     "console": "babel-node bin/console",
     "prebuild": "npm run check -s && npm run clean -s",
     "build": "babel --optional runtime src -d dist",
     "postbuild": "npm run test -s",
-    "coverage": "babel-node node_modules/.bin/isparta cover test/*.js",
-    "coveralls": "npm run coverage -s && coveralls < coverage/lcov.info",
-    "postcoveralls": "rimraf ./coverage",
     "prepublish": "npm run build -s",
     "deploy": "git pull --rebase origin master && git push origin master",
     "patch": "npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
-    "postpublish": "git push origin master --follow-tags",
-    "toc": "doctoc --github --title \"# Changelog\" CHANGELOG.md"
+    "postpublish": "git push origin master --follow-tags"
   },
   "repository": {
     "type": "git",
@@ -42,19 +38,22 @@
   },
   "homepage": "https://github.com//crawler-NTUST-course#readme",
   "devDependencies": {
-    "eslint": "*",
-    "babel-eslint": "*",
     "babel": "*",
+    "babel-eslint": "*",
+    "chai": "^3.3.0",
     "coveralls": "*",
-    "isparta": "*",
-    "tape": "*",
-    "tap-spec": "*",
-    "rimraf": "*",
     "dependency-check": "*",
-    "watch": "*",
-    "doctoc": "*"
+    "doctoc": "*",
+    "eslint": "*",
+    "isparta": "*",
+    "mocha": "^2.3.3",
+    "rimraf": "*",
+    "watch": "*"
   },
   "dependencies": {
-    "babel-runtime": "*"
+    "babel-runtime": "*",
+    "cheerio": "^0.19.0",
+    "request": "^2.64.0",
+    "request-promise": "^0.4.3"
   }
 }
