@@ -67,6 +67,7 @@ export default class {
   constructor(attributes = {}) {
     this.year = attributes.year || getCurrentYear();
     this.term = attributes.term || getCurrentTerm();
+    this.codeScope = attributes.codeScope;
     this.data = [];
   }
 
@@ -117,6 +118,7 @@ export default class {
           "Acb0101": 'on',
           "BCH0101": 'on',
           "semester_list": semesterList[`${this.year - 1911}${this.term}`],
+          "Ctb0101": this.codeScope,
           "QuerySend": '送出查詢'
         };
         return request.post({ url: QUERY_URL, followAllRedirects: true, form: form });

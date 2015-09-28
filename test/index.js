@@ -16,4 +16,15 @@ describe('Crawler', () => {
       expect(crawler.term).to.equal(2);
     });
   });
+
+  describe('#crawl()', function () {
+    this.timeout(1000000);
+
+    it('crawls the data', (done) => {
+      var crawler = new Crawler({ codeScope: 'CS1' });
+      crawler.crawl().then((data) => {
+        done();
+      })
+    });
+  });
 });
