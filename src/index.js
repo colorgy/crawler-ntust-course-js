@@ -227,6 +227,7 @@ export default class {
 
       }).then(() => {
         // All done, yeah!
+        this.data = data;
         resolve(data);
 
       }).catch((e) => {
